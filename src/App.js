@@ -1,15 +1,13 @@
-import React, { component, Component } from "react";
-import Component_1 from "./components/Component_1";
+import React from "react";
+import Hero from "./components/Hero";
 import "./App.css";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Component_1 />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
 
 export default App;
