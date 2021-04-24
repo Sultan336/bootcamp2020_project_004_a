@@ -25,13 +25,12 @@ jobs:
         with:
            # Version Spec of the version
            node-version: 12
-           
-      - name: Install Surge
-        run: npm install -g surge
-
   
       - name: Build command
-        run: npm run build
-        
+        run: sudo yarn build
+     
+      - name: Install Surge
+        run: npm install -g surge
+     
       - name: Deploy to surge
         run: surge ./build desajgjchh.surge.sh  --token ${{ secrets.SURGE_TOKEN }}
