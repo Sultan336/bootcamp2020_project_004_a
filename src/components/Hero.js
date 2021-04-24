@@ -120,7 +120,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 3 } }}
           >
-            Get Started
+            Let's Get Started
           </Button>
         </ColumnLeft>
         <ColumnRight>
